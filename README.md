@@ -26,3 +26,8 @@ You can take a pretrained network and use it as a starting point to learn a new 
 
 
 <img width="1128" alt="Screenshot 2020-09-30 at 3 37 14 AM" src="https://user-images.githubusercontent.com/62153950/94621641-4e977780-02ce-11eb-918d-57a7d3e98d3b.png">
+
+Learn More about Xception from:
+https://in.mathworks.com/help/deeplearning/ref/xception.html
+
+https://medium.com/analytics-vidhya/image-recognition-using-pre-trained-xception-model-in-5-steps-96ac858f4206
