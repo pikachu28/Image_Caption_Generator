@@ -23,3 +23,6 @@ Xception is a convolutional neural network that is 71 layers deep. You can load 
 You can use classify to classify new images using the Xception model.
 This technique is called Tranfer Learning.This is commonanly used in Deep Learning Applications.
 You can take a pretrained network and use it as a starting point to learn a new task. Fine-tuning a network with transfer learning is usually much faster and easier than training a network from scratch with randomly initialized weights. You can quickly transfer learned features to a new task using a smaller number of training images.
+
+
+<img width="1128" alt="Screenshot 2020-09-30 at 3 37 14 AM" src="https://user-images.githubusercontent.com/62153950/94621641-4e977780-02ce-11eb-918d-57a7d3e98d3b.png">
