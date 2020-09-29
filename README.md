@@ -16,7 +16,7 @@ And we have an image description folder(Description_of_image) in which several f
 
 We are going to use a pretrained library for training our model. It will ease our work as we do not have teach our model everything from beginning. Basics are done using Xception and then training our model on our dataset and after this we follow our cycle of hyperparameter tunning. Everytime we tune a hyperparameter we do not have to start from beginning, we can just start from where we train our model this technique save alot of time and efforts.
 
-But what is Xception Model?
+#### But what is Xception Model and Transfer Learning?
 
 Xception is a convolutional neural network that is 71 layers deep. You can load a pretrained version of the network trained on more than a million images from the ImageNet database. The pretrained network can classify images into 1000 object categories, such as keyboard, mouse, pencil, and many animals. As a result, the network has learned rich feature representations for a wide range of images. The network has an image input size of 299-by-299.
 
