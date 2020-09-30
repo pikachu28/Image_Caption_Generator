@@ -32,3 +32,21 @@ You can take a pretrained network and use it as a starting point to learn a new 
 https://in.mathworks.com/help/deeplearning/ref/xception.html
 
 https://medium.com/analytics-vidhya/image-recognition-using-pre-trained-xception-model-in-5-steps-96ac858f4206
+
+
+### Data Cleaning
+
+The format of our file is image and caption seperated by a new line('\n')
+We are going to store our final cleaned data in descriptions.txt
+
+For loading ,Cleaning and saving  our data we will use five functions:
+
+              1. load_doc(filename) - For loading the document file and reading the contents inside the file into a string (loading tokenized file)
+              
+              2. all_image_caption(filename) - This function will create a descriptions dictionary that maps images with a list of 5 captions.
+              
+              3. cleaning_text(descriptions) - This functions takes all descriptions and performs data cleaning. This is an important step when we work with textual data, according to our goal, we decide what type of cleaning we want to perform on the text. In our case, we will be                                                removing punctuations, converting all text to lowercase and removing words that contain numbers.
+
+              4. text_vocabulary(descriptions) - This is a simple function that will separate all the unique words and create the vocabulary from all the descriptions.
+              
+              5. save_descriptions(descriptions, filename) - This function will create a list of all the descriptions that have been preprocessed and store them into a file. 
