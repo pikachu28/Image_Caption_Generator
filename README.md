@@ -1,5 +1,12 @@
 # Image_Caption_Generator
 
+
+To make our image caption generator model, we will be merging CNN-RNN model architecture.
+-CNN is used for extracting features from the image. We will use the
+pre-trained model Xception.
+-LSTM will use the information CNN to generate a description of the
+image
+
 ## Data Description:
 
 ### Data Collected From:
