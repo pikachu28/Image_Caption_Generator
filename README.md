@@ -49,4 +49,4 @@ For loading ,Cleaning and saving  our data we will use five functions:
 
               4. text_vocabulary(descriptions) - This is a simple function that will separate all the unique words and create the vocabulary from all the descriptions.
               
-              5. save_descriptions(descriptions, filename) - This function will create a list of all the descriptions that have been preprocessed and store them into a file. 
+              5. save_descriptions(descriptions, filename) - This function will create a list of all the descriptions that have been preprocessed and store them into a file (descriptions.txt). 
