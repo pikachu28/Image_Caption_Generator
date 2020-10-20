@@ -92,3 +92,9 @@ Computers don’t understand English words, for computers, we will have to repre
     
     3. max_length(descriptions): Calculate maximum length of the descriptions. This is to decide structure parameters.
     
+    
+### Data Generator
+
+For Supervised learning task, we have to provide input and output to the model for training.  We have to train our model on 6000 images and each image will contain 2048 length feature vector and caption is also represented as numbers. This amount of data for 6000 images is not possible to hold into memory so we will be using a generator method that will yield batches.
+
+The generator will yield the input and output sequence.
