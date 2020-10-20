@@ -53,7 +53,7 @@ For loading ,Cleaning and saving  our data we will use five functions:
               
               2. all_image_caption(filename) - This function will create a descriptions dictionary that maps images with a list of 5 captions.
               
-              3. cleaning_text(descriptions) - This functions takes all descriptions and performs data cleaning. This is an important step when we work with textual data, according to our goal, we decide what type of cleaning we want to perform on the text. In our case, we will be                                                removing punctuations, converting all text to lowercase and removing words that contain numbers.
+              3. cleaning_text(descriptions) - This functions takes all descriptions and performs data cleaning. This is an important step when we work with textual data, according to our goal, we decide what type of cleaning we want to perform on the text. In our case, we will be removing punctuations, converting all text to lowercase and removing words that contain numbers.
 
               4. text_vocabulary(descriptions) - This is a simple function that will separate all the unique words and create the vocabulary from all the descriptions.
               
