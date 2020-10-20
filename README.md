@@ -77,6 +77,18 @@ We have Flickr_8k.trainImages.txt file that contains a list of 6000 image names 
 Functions to load Dataset:
 
     1. load_photos(filename): This will load in a string and will return list of the image names.
+    
     2. load_clean_description(filename, photos): This function will create a dictionary that contains captions for each photo from the list returned from above function.We also append the <start> and <end> identifier for each caption. We need this so that our LSTM model can identify the starting and ending of the caption.
+    
     3. load_features(photos): Give us the dictionary for image name and their feature vector which we have previously extracted from Xception Model.
 
+### Tokenizing the vocabulary
+
+Computers don’t understand English words, for computers, we will have to represent them with numbers. So, we will map each word of the vocabulary with a unique index value. Keras library provides us with the tokenizer function that we will use to create tokens from our vocabulary and save them to a tokenizer.p pickle file.
+
+    1. dict_to_list(descriptions): Converting dictionary to clean list of descriptions
+    
+    2. create_tokenizer(descriptions): creating tokenizer class, this will vectorise text corpus, each integer will represent token in dictionary
+    
+    3. max_length(descriptions): Calculate maximum length of the descriptions. This is to decide structure parameters.
+    
