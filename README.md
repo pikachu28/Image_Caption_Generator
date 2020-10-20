@@ -1,4 +1,4 @@
-# Image_Caption_Generator
+# Image Caption Generator
 
 
 To make our image caption generator model, we will be merging CNN-RNN model architecture.
