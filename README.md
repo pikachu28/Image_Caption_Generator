@@ -17,6 +17,7 @@ https://www.kaggle.com/wikiabhi/image-caption-generator?
 
 We have an image folder in which all the images are stored with their name as their unique ID.
 And we have an image description folder(Description_of_image) in which several files. Train , test, dev files are there to divide images into training and testing. They are containing image ID from images folder. Description of Images is in Tokenized and Text Normalized file. Each image id or image have 5 descriptions in those files.
+We have 6000 images for training.
 
 
 ### Using a pretrained library: Xception
@@ -57,3 +58,25 @@ For loading ,Cleaning and saving  our data we will use five functions:
               4. text_vocabulary(descriptions) - This is a simple function that will separate all the unique words and create the vocabulary from all the descriptions.
               
               5. save_descriptions(descriptions, filename) - This function will create a list of all the descriptions that have been preprocessed and store them into a file (descriptions.txt). 
+
+
+### Feature Extraction
+
+This is the time to use Transfer Learning. We don't have to do everything on our own we will use pre-trained model Xception to train it on our data.
+One thing to remeber is that Xception Model take 299*299*3 as image input size. We will remove the last classification layer and get 2048 feature vectors.
+
+
+#### extract_features():
+
+The function extract_features() will extract features for all images and we will map image names with their respective feature array. Then we will dump the features dictionary into a “features.p” pickle file.
+
+### Loading Dataset For Training the model:
+
+We have Flickr_8k.trainImages.txt file that contains a list of 6000 image names that we will use for training.
+
+Functions to load Dataset:
+
+    1. load_photos(filename): This will load in a string and will return list of the image names.
+    2. load_clean_description(filename, photos): This function will create a dictionary that contains captions for each photo from the list returned from above function.We also append the <start> and <end> identifier for each caption. We need this so that our LSTM model can identify the starting and ending of the caption.
+    3. load_features(photos): Give us the dictionary for image name and their feature vector which we have previously extracted from Xception Model.
+
