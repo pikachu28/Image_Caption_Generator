@@ -110,3 +110,8 @@ Input layer of size 2048 (Xception), 4096 (VGG_16, InceptionV3)
 
 
 Using Function data_generator, create_sequence gives following error.
+
+<img width="1094" alt="Screenshot 2020-10-29 at 3 53 36 PM" src="https://user-images.githubusercontent.com/62153950/97556074-f358c200-19fe-11eb-8ca4-cc1418a24350.png">
+
+Without these functions above error does not occur and model is save to IMCG.h5
+
