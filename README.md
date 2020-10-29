@@ -97,4 +97,13 @@ Computers don’t understand English words, for computers, we will have to repre
 
 For Supervised learning task, we have to provide input and output to the model for training.  We have to train our model on 6000 images and each image will contain 2048 length feature vector and caption is also represented as numbers. This amount of data for 6000 images is not possible to hold into memory so we will be using a generator method that will yield batches.
 
-The generator will yield the input and output sequence.
+The generator will yield the input and output sequence with the help of create_sequence function.
+
+### create_sequence
+
+Creating array according to the sequence for image, pad input sequence(pads the sequence to same length), encoded output sequence(one-hot encoding number of classes is equal to vocab_size.)
+
+### Model Architecture
+Input layer of size 2048 (Xception), 4096 (VGG_16, InceptionV3)
+
+
