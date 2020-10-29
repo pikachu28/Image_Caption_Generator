@@ -106,4 +106,7 @@ Creating array according to the sequence for image, pad input sequence(pads the 
 ### Model Architecture
 Input layer of size 2048 (Xception), 4096 (VGG_16, InceptionV3)
 
+<img width="869" alt="Screenshot 2020-10-29 at 3 49 14 PM" src="https://user-images.githubusercontent.com/62153950/97555728-77f71080-19fe-11eb-8741-40c2dde041f3.png">
 
+
+Using Function data_generator, create_sequence gives following error.
