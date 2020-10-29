@@ -133,6 +133,9 @@ BLEU-4: 0.000000
 VGG16 is a convolution neural net (CNN ) architecture which was used to win ILSVR(Imagenet) competition in 2014. It is considered to be one of the excellent vision model architecture till date. Most unique thing about VGG16 is that instead of having a large number of hyper-parameter they focused on having convolution layers of 3x3 filter with a stride 1 and always used same padding and maxpool layer of 2x2 filter of stride 2. It follows this arrangement of convolution and max pool layers consistently throughout the whole architecture. In the end it has 2 FC(fully connected layers) followed by a softmax for output. The 16 in VGG16 refers to it has 16 layers that have weights. This network is a pretty large network and it has about 138 million (approx) parameters.
 
 
+<img width="602" alt="Screenshot 2020-10-29 at 5 14 07 PM" src="https://user-images.githubusercontent.com/62153950/97564571-c8746b00-1a0a-11eb-8b10-958f7ca0d799.png">
+
+
 #### Read More on:
 https://towardsdatascience.com/step-by-step-vgg16-implementation-in-keras-for-beginners-a833c686ae6c
 
@@ -141,6 +144,8 @@ https://towardsdatascience.com/step-by-step-vgg16-implementation-in-keras-for-be
 
 There are 4 versions. The first GoogLeNet must be the Inception-v1 [4], but there are numerous typos in Inception-v3 [1] which lead to wrong descriptions about Inception versions. These maybe due to the intense ILSVRC competition at that moment. Consequently, there are many reviews in the internet mixing up between v2 and v3. Some of the reviews even think that v2 and v3 are the same with only some minor different settings.
 W used InceptionV3.
+
+<img width="706" alt="Screenshot 2020-10-29 at 5 14 48 PM" src="https://user-images.githubusercontent.com/62153950/97564662-e772fd00-1a0a-11eb-9ef3-35f13bae3941.png">
 
 #### Read More on:
 https://sh-tsang.medium.com/review-inception-v3-1st-runner-up-image-classification-in-ilsvrc-2015-17915421f77c
