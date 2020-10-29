@@ -115,3 +115,9 @@ Using Function data_generator, create_sequence gives following error.
 
 Without these functions above error does not occur and model is save to IMCG.h5
 
+### Model performance on test Data
+
+BLEU-1: 0.110109
+BLEU-2: 0.012732
+BLEU-3: 0.000000
+BLEU-4: 0.000000
